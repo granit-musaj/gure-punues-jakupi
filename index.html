@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html><!doctype html>
 <html lang="sq">
   <head>
     <meta charset="UTF-8" />
@@ -17,6 +17,11 @@
         font-family: "Poppins", sans-serif;
         scroll-behavior: smooth;
       }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+      }
 
       body {
         background:
@@ -25,18 +30,15 @@
         background-size: cover;
         background-attachment: fixed;
         color: white;
-      }
-
-      .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: auto;
+        padding-top: 70px;
       }
 
       /* NAVBAR */
 
       header {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: 1000;
@@ -44,42 +46,48 @@
 
       nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
+        padding: 12px 0;
       }
 
       .logo {
-        font-size: 22px;
-        font-weight: 700;
-        color: #d6b56c;
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffd27a;
+        letter-spacing: 0.6px;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+        padding-left: 6px;
       }
 
-      .top-logo {
-        text-align: center;
-        padding: 8px 0;
-        background: rgba(0, 0, 0, 0.15);
-        position: relative;
-        z-index: 1010;
-      }
+      /* removed separate top-logo; logo is inside the header/nav */
 
       .nav-links {
         display: flex;
         list-style: none;
+        align-items: center;
+        margin-left: auto;
       }
 
       .nav-links li {
-        margin-left: 30px;
+        margin-left: 26px;
       }
 
       .nav-links a {
-        color: white;
+        color: #ffffff;
         text-decoration: none;
-        transition: 0.3s;
+        transition:
+          color 0.2s ease,
+          transform 0.15s ease;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 6px 8px;
+        border-radius: 6px;
       }
 
       .nav-links a:hover {
         color: #d6b56c;
+        transform: translateY(-2px);
       }
 
       .hamburger {
@@ -649,12 +657,10 @@
   </head>
 
   <body>
-    <div class="top-logo container">
-      <div class="logo">Gurpunues Jakupi</div>
-    </div>
     <header>
       <div class="container">
         <nav>
+          <div class="logo">Gurpunues Jakupi</div>
           <ul class="nav-links" id="navLinks">
             <li><a href="#home">Ballina</a></li>
             <li><a href="#services">Shërbimet</a></li>
@@ -979,3 +985,5 @@
     </script>
   </body>
 </html>
+
+
