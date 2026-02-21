@@ -44,15 +44,23 @@
 
       nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-        padding: 20px 0;
+        padding: 10px 0;
       }
 
       .logo {
         font-size: 22px;
         font-weight: 700;
         color: #d6b56c;
+      }
+
+      .top-logo {
+        text-align: center;
+        padding: 8px 0;
+        background: rgba(0, 0, 0, 0.15);
+        position: relative;
+        z-index: 1010;
       }
 
       .nav-links {
@@ -641,10 +649,12 @@
   </head>
 
   <body>
+    <div class="top-logo container">
+      <div class="logo">Gurpunues Jakupi</div>
+    </div>
     <header>
       <div class="container">
         <nav>
-          <div class="logo">Gurpunues Jakupi</div>
           <ul class="nav-links" id="navLinks">
             <li><a href="#home">Ballina</a></li>
             <li><a href="#services">Shërbimet</a></li>
