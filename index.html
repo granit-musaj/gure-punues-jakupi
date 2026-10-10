@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Gurpunues Jakupi – përpunim dhe montim guri për fasada, rrethime, mure, çezme, skara dhe kalldrëm. Magjistralja Pejë–Prishtinë, km 38, Klinë.">
 <title>Gurpunues Jakupi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +28,9 @@
   color-scheme:light;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0}
+img{max-width:100%}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 body{background:var(--ink);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -174,6 +183,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 footer img{height:28px;width:auto;display:block}
 .demo{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line-2);padding:4px 10px;border-radius:999px}
 </style>
+</head>
+<body>
+
 
 <header>
   <nav class="wrap nav" aria-label="Kryesore">
@@ -387,3 +399,6 @@ form.addEventListener("submit",e=>{
 });
 document.getElementById("copyMsg").onclick=e=>copy(document.getElementById("outText").textContent,e.currentTarget);
 </script>
+
+</body>
+</html>
